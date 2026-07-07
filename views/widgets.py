@@ -23,7 +23,6 @@ FONT_SMALL = ("Segoe UI", 9)
 FONT_LABEL = ("Segoe UI", 10)
 FONT_BTN   = ("Segoe UI", 10, "bold")
 
-
 def page_header(parent, title, subtitle=""):
     hdr = tk.Frame(parent, bg=COLORS["card"],
                    highlightbackground=COLORS["border"],
