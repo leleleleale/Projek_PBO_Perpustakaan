@@ -4,8 +4,8 @@ import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 COLORS = {
-    "bg":         "#F0F8F4",   # hijau sangat muda (beda dari admin)
-    "sidebar":    "#1E6B45",   # hijau tua
+    "bg":         "#F0F8F4",   
+    "sidebar":    "#1E6B45",   
     "sidebar_h":  "#2E9E65",
     "accent":     "#E8A020",
     "accent_d":   "#C4841A",
