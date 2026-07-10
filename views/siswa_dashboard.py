@@ -28,6 +28,22 @@ FONT_BTN   = ("Segoe UI", 10, "bold")
 FONT_NAV   = ("Segoe UI", 11)
 
 
+class SiswaDashboard:
+    def __init__(self, root, siswa, on_logout):
+        self.root = root
+        self.siswa = siswa
+        self.on_logout = on_logout
+        self.nav_buttons = {}
+        self.current_page = None
+
+        root.title(f"Perpustakaan Digital – {siswa['nama']}")
+        root.configure(bg=COLORS["bg"])
+        try:
+            root.state("zoomed")
+        except Exception:
+            root.geometry("1100x680")
+
+        self._build()
 
     def _build(self):
         # ── Sidebar ─────────────────────────────────────────────
